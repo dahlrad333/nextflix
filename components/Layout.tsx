@@ -19,22 +19,22 @@ export default function Layout({
 
 
   return (
-    <div className={`overflow-x-hidden flex flex-grow h-[100vh] `}>
+    <div className={`overflow-x-hidden flex flex-grow h-[100vh] border border-red bg-black`}>
 
-      <header className="fixed w-full h-[20%] z-[1] flex flex-row justify-between items-center px-9">
-        <div className="flex flex-col justify-center items-end h-1/3 w-full">
-          header?
-        </div>
+      <header className="fixed w-full h-[10%] z-[1] flex flex-row justify-between items-center px-9 border border-orange text-4xl text-bold text-red font-bold">
+          NextFlix
       </header>
 
       <main
-        className="flex flex-col flex-grow "
+        className="flex flex-col flex-grow border border-yellow"
       >
         {children}
       </main>
       <footer
-        className={`absolute bottom-0 z-[1] w-full h-fit justify-center bg-gradient-to-t from-black via-black`}
+        className={`absolute bottom-0 z-[1] w-full h-[5%] border border-blue flex flex-row items-center justify-end p-6`}
       >
+        <div>NextFlix</div>
+        
       </footer>
     </div>
   )
