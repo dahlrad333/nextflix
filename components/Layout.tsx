@@ -16,19 +16,14 @@ type Props = {
 export default function Layout({
   children,
 }: Props) {
-  const router = useRouter()
 
 
   return (
     <div className={`overflow-x-hidden flex flex-grow h-[100vh] `}>
 
       <header className="fixed w-full h-[20%] z-[1] flex flex-row justify-between items-center px-9">
-        {/* POGS LOGO */}
-        <div className="flex flex-col justify-center items-center h-[60px] w-[60px] bg-[url('/icons/badge.svg')] bg-contain bg-center bg-no-repeat"></div>
-
-        {/* CONNECT WALLET */}
-        <div className="flex flex-col justify-center items-end h-1/3 w-[200px]">
-          
+        <div className="flex flex-col justify-center items-end h-1/3 w-full">
+          header?
         </div>
       </header>
 
