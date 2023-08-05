@@ -1,16 +1,10 @@
 
-import Link from 'next/link'
-import { useRouter } from 'next/router'
+
 import React from 'react'
-import { ReactNode, useEffect, useState } from 'react'
+import { ReactNode } from 'react'
 
 type Props = {
   children?: ReactNode
-  maxInteractives?: number
-  currInteractive?: number
-  audioSrc?: string
-  hideBreadcrumb?: boolean
-  hideHeader?: boolean
 }
 
 export default function Layout({
