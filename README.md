@@ -1,1 +1,6 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+To Get Started;
+
+After cloning project, navigate to nextflix dir ```cd nextflix```
+Install dependencies; ```yarn install```
+Run dev server ```yarn dev```
+
