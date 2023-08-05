@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import axios from 'axios'
 
 import { NextPageContext } from "next";
+import { API_KEY_PARAM, BASE_URL } from '../consts';
 
 
 export const getServerSideProps = async (context: NextPageContext) => { {
@@ -12,14 +13,7 @@ export const getServerSideProps = async (context: NextPageContext) => { {
   }
 }
 
-
-const BASE_URL = 'https://www.omdbapi.com/'
-const API_KEY_PARAM = '?apikey=3bb1db48'
-
 export default function FlickDetails() {
-
-  
-
     const router = useRouter()
     const [data, setData] = useState(null)
     const [queryParam, setQueryParam] = useState(null)
